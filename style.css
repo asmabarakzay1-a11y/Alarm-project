@@ -1,0 +1,90 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body,
+.container,
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  min-height: 100vh;
+  background: #4a98f7;
+}
+
+.container {
+  width: 450px;
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  flex-direction: column;
+}
+
+.container img {
+  width: 400px !important;
+  height: 150px;
+  object-fit: contain;
+}
+
+.container h1 {
+  font-size: 40px;
+  margin: 30px 0 35px;
+  color: #111;
+  font-weight: 700;
+}
+
+.container .content {
+  width: 100%;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.content .controls {
+  border: 1px solid #bbb;
+  width: calc(50% - 5px);
+  border-radius: 5px;
+  padding: 8px 10px;
+}
+
+.content .controls select {
+  outline: 0;
+  border: 0;
+  background: transparent;
+  width: 100%;
+  font-size: 16px;
+  color: #444;
+  cursor: pointer;
+}
+
+.container button {
+  width: 100%;
+  outline: 0;
+  border: 0;
+  background: #4a98f7;
+  color: #fff;
+  padding: 17px 0;
+  margin-top: 20px;
+  border-radius: 5px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.container button:hover {
+  background: #3285eb;
+}
+
+.container .content .disable{
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+
+
